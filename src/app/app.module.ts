@@ -28,6 +28,9 @@ import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { LoginsComponent } from './components/logins/logins.component';
+
+import {AngularFireModule} from '@angular/fire/compat'
 
 @NgModule({
   declarations: [
@@ -35,7 +38,8 @@ import { provideFirestore,getFirestore } from '@angular/fire/firestore';
     RegistrationComponent,
     
     DashboardComponent,
-    HeroComponent
+    HeroComponent,
+    LoginsComponent
   ],
   imports: [
     BrowserModule,
@@ -53,9 +57,7 @@ import { provideFirestore,getFirestore } from '@angular/fire/firestore';
     MatDatepickerModule,
     MatNativeDateModule,
     MatButtonModule,
-    provideFirebaseApp(() => initializeApp(environment.firebase)),
-    provideAuth(() => getAuth()),
-    provideFirestore(() => getFirestore())
+    AngularFireModule.initializeApp(environment.firebase)
     
   ],
   providers: [],

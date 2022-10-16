@@ -2,25 +2,24 @@ import { Component, OnInit } from '@angular/core';
 import { AuthService } from 'src/app/services/googleAuth/auth.service';
 
 @Component({
-  selector: 'app-registration',
-  templateUrl: './registration.component.html',
-  styleUrls: ['./registration.component.scss']
+  selector: 'app-logins',
+  templateUrl: './logins.component.html',
+  styleUrls: ['./logins.component.scss']
 })
-export class RegistrationComponent implements OnInit {
-  hide = true;
+export class LoginsComponent implements OnInit {
 
-  fullname:string='';
   email : string = '';
   password : string = '';
 
-
+  
+  hide = true;
 
   constructor(private auth: AuthService) { }
 
   ngOnInit(): void {
   }
 
-  register() {
+  login() {
 
     if(this.email == '') {
       alert('Please enter email');
@@ -32,10 +31,15 @@ export class RegistrationComponent implements OnInit {
       return;
     }
 
-    this.auth.register(this.email,this.password);
+    this.auth.login(this.email,this.password);
+    
     this.email = '';
     this.password = '';
 
   }
+
+  // signInWithGoogle() {
+  //   this.auth.googleSignIn();
+  // }
 
 }
