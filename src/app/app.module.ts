@@ -30,7 +30,9 @@ import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { LoginsComponent } from './components/logins/logins.component';
 
-import {AngularFireModule} from '@angular/fire/compat'
+import {AngularFireModule} from '@angular/fire/compat';
+import { ForgetPasswordComponent } from './components/forget-password/forget-password.component';
+import { VerifyEmailComponent } from './components/verify-email/verify-email.component'
 
 @NgModule({
   declarations: [
@@ -39,7 +41,9 @@ import {AngularFireModule} from '@angular/fire/compat'
     
     DashboardComponent,
     HeroComponent,
-    LoginsComponent
+    LoginsComponent,
+    ForgetPasswordComponent,
+    VerifyEmailComponent
   ],
   imports: [
     BrowserModule,

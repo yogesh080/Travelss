@@ -38,8 +38,8 @@ export class LoginsComponent implements OnInit {
 
   }
 
-  // signInWithGoogle() {
-  //   this.auth.googleSignIn();
-  // }
+  signInWithGoogle() {
+    this.auth.googleSignIn();
+  }
 
 }
