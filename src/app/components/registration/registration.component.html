@@ -1,9 +1,17 @@
-<div>
+<div class="main-container" fxLayout="row" fxLayoutAlign="center center">
+
+    <mat-card class="left-box" >
+       <h1>FullFill Your Destiny</h1>
+    </mat-card>
     <mat-card>
+        <mat-card-title fxLayoutAlign="center center">
+            Registration
+        </mat-card-title>
         <div>
             <mat-form-field appearance="outline">
-                <mat-label>Enter your email</mat-label>
-                <input matInput placeholder="pat@example.com" [(ngModel)]="email"  required>
+                <mat-label >Enter your email</mat-label>
+                <input class="email-input" matInput placeholder="pat@example.com" [(ngModel)]="email"  required>
+                <mat-icon matSuffix>alternate_email</mat-icon>
             </mat-form-field>
         </div>
         <div>
@@ -16,9 +24,10 @@
                 </button>
             </mat-form-field>
         </div>
-        <div>
+        <div fxLayoutAlign="space-around center">
             <button ton mat-raised-button color="primary" (click)="register()" >Register</button>
-        </div><br>
+            <button ton mat-raised-button color="primary" >Login</button> 
+        </div>
     </mat-card>
 </div>
 

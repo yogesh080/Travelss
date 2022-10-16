@@ -1,30 +1,38 @@
-<div>
+
+
+<div class="main-container" fxLayout="row" fxLayoutAlign="center center">
+
+    <mat-card class="left-box">
+       <h1>FullFill Your Destiny</h1>
+    </mat-card>
     <mat-card>
+        <mat-card-title fxLayoutAlign="center center" >
+            Login
+        </mat-card-title>
         <div>
             <mat-form-field appearance="outline">
-                <mat-label>Enter your email</mat-label>
-                <input matInput placeholder="pat@example.com" [(ngModel)]="email" required>
+                <mat-label >Enter your email</mat-label>
+                <input class="email-input" matInput placeholder="pat@example.com" [(ngModel)]="email"   required>
+                <mat-icon matSuffix>alternate_email</mat-icon>
             </mat-form-field>
         </div>
         <div>
             <mat-form-field appearance="outline">
                 <mat-label>Enter your password</mat-label>
-                <input matInput [type]="hide ? 'password' : 'text'" [(ngModel)]="password">
+                <input matInput [type]="hide ? 'password' : 'text'" [(ngModel)]="password" >
                 <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
                     [attr.aria-pressed]="hide">
                     <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
                 </button>
             </mat-form-field>
         </div>
-        <div>
-            <button ton mat-raised-button color="primary" (click)="login()">Login</button>
+        <div fxLayoutAlign="space-around center">
+                <button ton mat-raised-button color="primary" (click)="login()">Login</button>
+                <button ton mat-raised-button color="primary" (click)="login()">Forget Password</button>
         </div><br>
-        <p>Need Account</p>
-        <p>Register</p>
-        <button>Forget password</button>
+        <button mat-raised-button style="margin-left: 62%;">Register</button><hr style="margin-top: 18px;"><br>
 
-
-        <div class="google-btn">
+        <div class="google-btn" style=" margin-left: 26px;">
             <div class="google-icon-wrapper">
                 <img class="google-icon"
                     src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" />
@@ -33,3 +41,5 @@
         </div>
     </mat-card>
 </div>
+
+
