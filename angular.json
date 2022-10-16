@@ -102,6 +102,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "Travel:build:production",
+            "firebaseProject": "travel-e8f3a",
+            "firebaseHostingSite": "travel-e8f3a"
+          }
         }
       }
     }
