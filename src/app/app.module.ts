@@ -36,7 +36,7 @@ import { ForgetPasswordComponent } from './components/forget-password/forget-pas
 import { VerifyEmailComponent } from './components/verify-email/verify-email.component'
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { StatesComponent } from './states/states.component';
+import { StatesComponent } from './components/states/states.component';
 
 @NgModule({
   declarations: [
