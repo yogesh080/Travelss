@@ -30,10 +30,14 @@ import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { LoginsComponent } from './components/logins/logins.component';
 
+
 import {AngularFireModule} from '@angular/fire/compat';
 import { ForgetPasswordComponent } from './components/forget-password/forget-password.component';
 import { VerifyEmailComponent } from './components/verify-email/verify-email.component'
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { StatesComponent } from './states/states.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,7 +47,8 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
     HeroComponent,
     LoginsComponent,
     ForgetPasswordComponent,
-    VerifyEmailComponent
+    VerifyEmailComponent,
+    StatesComponent
   ],
   imports: [
     BrowserModule,
@@ -62,7 +67,8 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
     MatNativeDateModule,
     MatButtonModule,
     AngularFireModule.initializeApp(environment.firebase),
-    MatProgressBarModule
+    MatProgressBarModule,
+    NgbModule
     
   ],
   providers: [],
