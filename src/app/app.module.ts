@@ -35,8 +35,8 @@ import {AngularFireModule} from '@angular/fire/compat';
 import { ForgetPasswordComponent } from './components/forget-password/forget-password.component';
 import { VerifyEmailComponent } from './components/verify-email/verify-email.component'
 import { MatProgressBarModule } from '@angular/material/progress-bar';
-import { StatesComponent } from './states/states.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { StatesComponent } from './states/states.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +48,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     LoginsComponent,
     ForgetPasswordComponent,
     VerifyEmailComponent,
-    StatesComponent
+    StatesComponent,
   ],
   imports: [
     BrowserModule,
