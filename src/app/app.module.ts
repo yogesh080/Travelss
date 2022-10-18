@@ -40,6 +40,7 @@ import { DisplaystateComponent } from './components/displaystate/displaystate.co
 import { BodyComponent } from './components/body/body.component';
 import { SliderComponent } from './components/slider/slider.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
