@@ -4,12 +4,12 @@
 
 export const environment = {
   firebase: {
-    projectId: 'travel-e8f3a',
-    appId: '1:617503719815:web:af39db2df0db3756939322',
-    storageBucket: 'travel-e8f3a.appspot.com',
-    apiKey: 'AIzaSyBmY_yEVtyarQqw-0XVYWJV4cfzucheJjE',
-    authDomain: 'travel-e8f3a.firebaseapp.com',
-    messagingSenderId: '617503719815',
+    projectId: 'travel-ab131',
+    appId: '1:533676404456:web:ddb73bcee9f2bd829c235d',
+    storageBucket: 'travel-ab131.appspot.com',
+    apiKey: 'AIzaSyBGSdmpu8Lit2wM6_OtCbeG86onz5mwDHQ',
+    authDomain: 'travel-ab131.firebaseapp.com',
+    messagingSenderId: '533676404456',
   },
   production: false
 };

@@ -32,7 +32,9 @@
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
-            "scripts": ["node_modules/bootstrap/dist/js/bootstrap.bundle.min.js","./node_modules/jquery/dist/jquery.min.js"]
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -110,11 +112,14 @@
             "prerender": false,
             "ssr": false,
             "browserTarget": "Travel:build:production",
-            "firebaseProject": "travel-e8f3a",
-            "firebaseHostingSite": "travel-e8f3a"
+            "firebaseProject": "travel-ab131",
+            "firebaseHostingSite": "travel-ab131"
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "718b28eb-0a47-45ed-9f20-b609ee65eecf"
   }
 }
