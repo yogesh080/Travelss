@@ -6,9 +6,16 @@
           "travel-e8f3a"
         ]
       }
+    },
+    "travel-ab131": {
+      "hosting": {
+        "Travel": [
+          "travel-ab131"
+        ]
+      }
     }
   },
   "projects": {
-    "default": "travel-e8f3a"
+    "default": "travel-ab131"
   }
 }

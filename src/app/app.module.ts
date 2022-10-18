@@ -22,9 +22,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
-
+import { NgImageSliderModule } from 'ng-image-slider';
 import {MatButtonModule} from '@angular/material/button';
-import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+
 import { environment } from '../environments/environment';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
@@ -37,6 +37,8 @@ import { VerifyEmailComponent } from './components/verify-email/verify-email.com
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DisplaystateComponent } from './components/displaystate/displaystate.component';
+import { BodyComponent } from './components/body/body.component';
+import { SliderComponent } from './components/slider/slider.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +51,8 @@ import { DisplaystateComponent } from './components/displaystate/displaystate.co
     ForgetPasswordComponent,
     VerifyEmailComponent,
     DisplaystateComponent,
+    BodyComponent,
+    SliderComponent,
   ],
   imports: [
     BrowserModule,
@@ -68,7 +72,8 @@ import { DisplaystateComponent } from './components/displaystate/displaystate.co
     MatButtonModule,
     AngularFireModule.initializeApp(environment.firebase),
     MatProgressBarModule,
-    NgbModule
+    NgbModule,
+    NgImageSliderModule
     
   ],
   providers: [],
