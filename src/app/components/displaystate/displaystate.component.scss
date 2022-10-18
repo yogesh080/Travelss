@@ -1,0 +1,32 @@
+.display-container{
+    // max-width: 100%;
+    // border: solid green 2px;
+    width: auto;
+    flex-flow: wrap;
+}
+
+.state-tag{
+    font-size: 26px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.display-state-img{
+    background-image: url(../../../assets/Image/delhi.jpg);
+    width: 244px;
+    height: 177px;
+    margin-left: 20%;
+    margin-bottom: 20px;
+    // border: solid red 2px;
+
+}
+
+.state-title{
+    
+    background-color: rgba(250, 235, 215, 0.137);
+    border-radius: 8px;
+
+}
