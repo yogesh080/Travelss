@@ -14,19 +14,16 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.display-state-img{
-    background-image: url(../../../assets/Image/delhi.jpg);
-    width: 244px;
-    height: 177px;
-    margin-left: 8%;
-    margin-bottom: 11px;
-    // border: solid red 2px;
 
+.img{
+    border-radius: 7px;
+    
+}
+.title-tag{
+    position: absolute;
+    bottom: 0px;
 }
 
-.state-title{
-    
-    background-color: rgba(250, 235, 215, 0.137);
-    border-radius: 8px;
-
+.mat-card-state{
+    padding: 0px;
 }

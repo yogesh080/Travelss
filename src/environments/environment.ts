@@ -11,7 +11,7 @@ export const environment = {
     authDomain: 'travel-ab131.firebaseapp.com',
     messagingSenderId: '533676404456',
   },
-  production: false
+  production: false,
 };
 
 /*
