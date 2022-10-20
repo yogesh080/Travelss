@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 
 @Component({
   selector: 'app-displaystate',
@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DisplaystateComponent implements OnInit {
 
+  @Input() StateArray:any;
   constructor() { }
 
   ngOnInit(): void {
+    console.log("Get all Statess", this.StateArray)
   }
+  
 
 }

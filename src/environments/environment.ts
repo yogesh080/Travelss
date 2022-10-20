@@ -12,6 +12,9 @@ export const environment = {
     messagingSenderId: '533676404456',
   },
   production: false,
+  baseurl : "http://travelbackend1-dev.eba-u3kgtx29.us-east-1.elasticbeanstalk.com/api"
+  // baseurl:"https://localhost:44314/api"
+
 };
 
 /*

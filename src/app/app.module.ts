@@ -56,7 +56,9 @@ import { MdbTabsModule } from 'mdb-angular-ui-kit/tabs';
 import { MdbTooltipModule } from 'mdb-angular-ui-kit/tooltip';
 import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
 import { FooterComponent } from './components/footer/footer.component';
-
+import { GetallStateComponent } from './components/getall-state/getall-state.component';
+import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http'
 @NgModule({
   declarations: [
     AppComponent,
@@ -71,6 +73,7 @@ import { FooterComponent } from './components/footer/footer.component';
     BodyComponent,
     SliderComponent,
     FooterComponent,
+    GetallStateComponent,
   ],
   imports: [
     BrowserModule,
@@ -106,7 +109,9 @@ import { FooterComponent } from './components/footer/footer.component';
     MdbScrollspyModule,
     MdbTabsModule,
     MdbTooltipModule,
-    MdbValidationModule
+    MdbValidationModule,
+    RouterModule,
+    HttpClientModule
     
   ],
   providers: [],
