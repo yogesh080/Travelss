@@ -56,6 +56,8 @@ import { MdbTabsModule } from 'mdb-angular-ui-kit/tabs';
 import { MdbTooltipModule } from 'mdb-angular-ui-kit/tooltip';
 import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
 import { FooterComponent } from './components/footer/footer.component';
+import { StatebyidComponent } from './components/statebyid/statebyid.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
@@ -71,6 +73,8 @@ import { FooterComponent } from './components/footer/footer.component';
     BodyComponent,
     SliderComponent,
     FooterComponent,
+    StatebyidComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,

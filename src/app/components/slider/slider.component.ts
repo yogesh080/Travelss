@@ -17,6 +17,7 @@ export class SliderComponent implements OnInit {
   }
   onclick()
   {
+    
     this.route.navigateByUrl('login')
   }
 

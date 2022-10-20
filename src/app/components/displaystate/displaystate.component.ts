@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-displaystate',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DisplaystateComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route: Router) { }
 
   ngOnInit(): void {
   }
-
+  onclick()
+  {
+    
+    this.route.navigateByUrl('state')
+  }
 }
