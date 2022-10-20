@@ -12,14 +12,14 @@ const routes: Routes = [
   { path: 'login', component: LoginsComponent },
   { path: 'forgetpassword', component: ForgetPasswordComponent },
   { path: 'varify-email', component: VerifyEmailComponent },
-  {path:'display', component:GetallStateComponent},
+  // {path:'display', component:GetallStateComponent},
 
   {
     path: 'dashboard',
     component: DashboardComponent,
     children: [
       { path: '', redirectTo: '/dashboard/display', pathMatch: 'full' },
-      // { path: 'display', component:GetallStateComponent},
+      { path: 'display', component:GetallStateComponent},
     ],
   },
 ];
